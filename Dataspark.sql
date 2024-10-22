@@ -104,7 +104,7 @@ FROM stores
 GROUP BY country
 ORDER BY total_square_meters DESC;
 
-*** Query 10: Which category have more sales
+*** Query 10: Which category have more stores
 SELECT p.subcategory, COUNT(s.productkey) AS sales_count
 FROM products p
 JOIN sales s ON p.productkey = s.productkey
